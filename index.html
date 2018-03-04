@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
-    <script src="app.js"></script>
-  </head>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
+  <script src="app.js"></script>
+</head>
 
 <body ng-app="HangmanGame" ng-controller="MainController">
-	<div>
-		<h1>Hangman Game</h1>
-		<div>
-			Remaining guesses: {{guesses}}  
-		</div>
-		<div>
-			<div>
-				<div>Word: {{displayWord}}</div>
-				<div>
-					<input type="text" name="guess" ng-model="input" />
-					<button ng-disabled="inputBtn" ng-click="inputLetter()">Check me!</button>
-				</div>
-			</div>
-		</div>
+  <div>
+    <h1>Hangman Game</h1>
+    <div>
+      Remaining guesses: {{guesses}}
+    </div>
+    <div>
+      <div>
+        <div>Word: {{displayWord}}</div>
+        <div>
+          <input type="text" name="guess" ng-model="input" />
+          <button ng-disabled="inputBtn" ng-click="inputLetter()">Check me!</button>
+        </div>
+      </div>
+    </div>
     <div>{{message}}</div>
     <div>
-      <button ng-show="ShowBtn" ng-click="startNewGame()">Start new game</button>  
+      <button ng-show="ShowBtn" ng-click="startNewGame()">Start new game</button>
     </div>
-	</div>
+  </div>
 </body>
 
 </html>
